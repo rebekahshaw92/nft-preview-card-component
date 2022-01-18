@@ -1,0 +1,51 @@
+$white: hsl(0, 0%, 100%);
+$softBlue: hsl(215, 51%, 70%);
+$cyan: hsl(178, 100%, 50%);
+$font: 'Outfit', sans-serif;
+
+body {
+    font-family: $font;
+}
+
+.card-title {
+    color: $white;
+    font-weight: 600;
+}
+
+.card-text {
+    font-weight: 300;
+    font-size: 18px;
+    color: $softBlue;
+}
+
+.mainText {
+    color: $cyan;
+    font-size: 16px;
+    font-weight: 400;
+    padding-top: 3px;
+    margin-left: -15px;
+}
+
+.date {
+    color: $softBlue;
+    padding-top: 3px;
+    margin-left: -5px;
+    font-size: 16px;
+    float: right;
+}
+
+.username {
+    color: $softBlue;
+    font-size: 18px;
+    span {
+        color: $white;
+        cursor: pointer;
+        &:hover {
+            color: $cyan;
+        }
+    }
+}
+
+.attribution {
+    color: $softBlue;
+}

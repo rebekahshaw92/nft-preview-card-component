@@ -1,0 +1,70 @@
+$veryDarkBlueCard: rgb(20, 37, 61);
+$white: hsl(0, 0%, 100%);
+$cyan: hsl(178, 100%, 50%);
+
+.card {
+    background-color: $veryDarkBlueCard;
+    width: 25rem;
+    display: flex;
+    margin: 0 auto; 
+    float: none; 
+    margin-top: 40px;
+    border-radius: 20px;
+}
+
+.mainImage {
+    padding: 30px;
+    position: relative;
+    cursor: pointer;
+    img {
+        display: block;
+      }
+
+    &::after {
+        content: url("../images/icon-view.svg");
+        margin: 30px;
+        background-color: $cyan;
+        position: absolute;
+        inset: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        transition: all 0.25s ease;     
+    }
+     &:hover {
+         &::after {
+            opacity: 1;
+     }   
+}  
+}
+
+.card-title {
+    cursor: pointer;
+    &:hover {
+        color: $cyan;
+    }
+}
+
+.fa-clock {
+    padding-left: 50px !important;
+}
+
+.fa-icon {
+    width: 30px;
+    height: 30px;
+    outline: 1px solid $white;
+    border-radius: 100px;
+    margin-left: 20px;
+}
+
+hr {
+    border: 1px solid hsl(215, 32%, 27%);
+    width: 20rem !important;
+    margin-left:  40px;
+    margin-right:  40px;
+}
+
+.profile {
+    padding-bottom: 20px;
+}
